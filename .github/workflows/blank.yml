@@ -13,6 +13,7 @@ jobs:
     - name: Check-out devops repository
       uses: actions/checkout@v2
       with:
+        python-version: 3.8
         repository: abhishekd23/python_script
         token: ${{ secrets.GITHUB_TOKEN }}
         path: ${{ env.DEVOPS_DIR }}
