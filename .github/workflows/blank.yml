@@ -2,8 +2,6 @@ name: On Push Run
 
 on: push
 
-env:
-  PYTHON_DIR: python_script
 
 jobs:
   hello-world:
@@ -19,5 +17,5 @@ jobs:
         path: ${{ env.DEVOPS_DIR }}
 
     - name: Hello World
-      run: python ${{ env.PYTHON_DIR }}/a.py
+      run: python a.py
       shell: sh
