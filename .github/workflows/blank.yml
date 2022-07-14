@@ -3,7 +3,7 @@ name: On Push Run
 on: push
 
 env:
-  DEVOPS_DIR: devops
+  PYTHON-DIR: python_script
 
 jobs:
   hello-world:
